@@ -1,14 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.dep11.ClientFormCOntroller"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="548.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.ClientFormCOntroller">
+   <children>
+      <TableView layoutX="35.0" layoutY="88.0" prefHeight="200.0" prefWidth="295.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ID" />
+          <TableColumn prefWidth="139.0" text="Customer Name" />
+            <TableColumn prefWidth="75.0" text="Status " />
+        </columns>
+      </TableView>
+      <VBox layoutX="377.0" layoutY="80.0" prefHeight="166.0" prefWidth="198.0" spacing="5.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="204.0" text="Customer Id:" />
+            <TextField />
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="204.0" text="Customer Name:" />
+            <TextField layoutX="10.0" layoutY="35.0" />
+            <Label layoutX="10.0" layoutY="69.0" prefHeight="25.0" prefWidth="204.0" text="Customer Contact Number:" />
+            <TextField layoutX="10.0" layoutY="81.0" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="9.0" prefWidth="75.0" style="-fx-background-color: lightgreen;" text="Submit">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Ubuntu Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <HBox layoutX="26.0" layoutY="298.0" prefHeight="87.0" prefWidth="535.0">
+         <children>
+            <ImageView fitHeight="98.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="98.0" fitWidth="142.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="98.0" fitWidth="142.0" layoutX="152.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="98.0" fitWidth="142.0" layoutX="152.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+   </children>
 </AnchorPane>
